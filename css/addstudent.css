@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.heading{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(221, 184, 255);
+}
+h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.imp-notice span{
+    color: red;
+    font-size: 20px;
+}
+.imp-notice p{
+    float: right;
+    padding: 7px 10px;
+}
+.formcontrol{
+    padding-top: 20px;
+    border: 1px solid black;
+    margin: 45px 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+span{
+    color: red;
+}
+.row> .education{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+table, input{
+    border: .5px solid rgb(209, 209, 209);
+    padding: 2px;
+    font-size: 13px;
+    margin: 15px;
+}
+p > input{
+    font-size: 12px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+ input {
+     transition: .5s;
+ }
+
+ input:hover {
+     border: 1px solid rgb(192, 155, 155);
+ }
+
+
+.btn-section{
+    align-items: center;
+    text-align: center;
+}
+
+.btn-section> button{
+    padding: 7px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 90px;
+}
+
+
+/* submi-btn */
+.submit{
+    --b: 3px;
+    /* border thickness */
+    --s: 1.155em;
+    /* size of the corner */
+    --color: #373B44;
+
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 15px;
+
+    border: 1px solid black;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.submit:hover,
+.submit:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+.submit:active {
+    background: var(--color);
+    color: #fff;
+}
+/* preview */
+.preview{
+    --b: 3px;
+    /* border thickness */
+    --s: 1.155em;
+    /* size of the corner */
+    --color: #373B44;
+
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 15px;
+
+    border: 1px solid black;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.preview:hover,
+.preview:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+.preview:active {
+    background: var(--color);
+    color: #fff;
+}
+
+
+/* resposive */
+@media screen and (mix-device-width: 640px) {
+textarea {
+    width: 10px;
+}
+
+}
+
+
+/* emptycontainer */
+.containerblank {
+    width: 100%;
+    height: 50px;
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="/css/addstudent.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <div class="heading">
+    <div class="heading-items">
+        <h3>Add Student's Information</h3>
+    </div>
+  </div>
+  <div class="imp-notice">
+    <p><span>*</span> All field are Mandatory</p>
+  </div>
+
+ <!-- insert data form -->
+<div class="formcontrol mx-5">
+    <div class="main-form">
+    <form class="row mt-1 gx-3 gy-2 align-items-center my-4">
+        <div class="row ">
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="" for="specificSizeInputGroupCentrename">1. Centre Name <span>*</span></label>
+                <select class="form-select" id="Centrename">
+                    <option selected> Select Centre Name</option>
+                    <option value="nielitdibrugarhEC">NIELIT DIBRUGARH EC</option>
+                    
+                </select>
+            </div>
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="" for="courseSelect"> 2. Course Applied For <span>*</span></label>
+                <select class="form-select" id="course">
+                    <option selected> Select Course name</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="" >3. Name of the Student <span>*</span></label>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="studentname" id="studentename" placeholder="Student Name" required>
+                </div>
+            </div>
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="">4. Father's/Husband Name <span>*</span></label>
+                <div class="input-group">
+            
+                    <input type="text" class="form-control" name="fatherhusbandname" id="fhname" placeholder="Father's/Husband Name" required>
+                </div>
+            </div>
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="" >5. Mother's Name <span>*</span></label>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="mothername" id="motherename" placeholder="Mother's Name" required>
+                </div>
+            </div>
+        </div>
+        <!-- parmanent address -->
+        <div class="row mt-3   parmanentaddress ">
+                <div class="col-sm-3 mt-1 mx-3">
+                    <label class="" >6. Parmanent Address</label>
+                   <textarea name="parmanentaddress" class="input-group"  id="parmanentaddress" cols="38" rows="2"></textarea>
+                </div>
+                <!-- address -->
+                
+                    <div class="col-sm-3 mt-1 mx-3">
+                        <label class=""> District Name</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="pdistrict" id="pdistrict" placeholder="District">
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mt-1 mx-3">
+                        <label class=""> State</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="ptate" id="pstate" placeholder="State">
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mt-1 mx-3">
+                        <label class="">Pin</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" name="pin" id="pin" placeholder="Pin">
+                        </div>
+                    </div>
+                
+               
+               
+        </div>
+
+        <div class="col mt-4">
+            <label for="sameaddress"> Click chechbox if Addresses are same:  </label>
+            <input type="checkbox" value="same " id="sameaddress"> 
+        </div>
+
+        <!-- correspondence address -->
+        <div class="row mt-3 correspondence">
+                <div class="col-sm-3 mt-1 mx-3">
+                    <label class="">7. Correspondence Address</label>
+                    <textarea class="input-group" name="correspondence" id="Correspondence" cols="38" rows="2"></textarea>
+                </div>
+                <!-- address -->
+            
+                <div class="col-sm-3 mt-1 mx-3">
+                    <label class=""> District Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="cdistrict" id="cdistrict" placeholder="District">
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-1 mx-3">
+                    <label class=""> State</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="cState" id="cstate" placeholder="State">
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-1 mx-3">
+                    <label class="">Pin</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" name="cpin" id="cpin" placeholder="Pin">
+                    </div>
+                </div>
+        </div>
+     
+        
+
+        <div class="row mt-5">
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="" >8. Contact No <span>*</span></label>
+                <div class="input-group">
+                    <input type="number" class="form-control" name="contactno" id="contactno" placeholder="Contact No" required>
+                </div>
+            </div>
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="" >9. Parents Contact No</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="pcontactno" id="pcontactno" placeholder="Parents Contact No">
+                </div>
+            </div>
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="" >10. Email-Id</label>
+                <div class="input-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email-Id">
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="">11. Date-of-Birth(dd-mm-yyy)</label>
+                <div class="input-group">
+                    <input type="date" class="form-control" name="dob" id="dob" placeholder="DOB">
+                </div>
+            </div>
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="" >12. Gender <span>*</span></label>
+                <select class="form-select" id="gender">
+                    <option selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                
+                </select>
+            </div>
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="" >13. Category</label>
+                <select class="form-select" id="category">
+                    <option selected>Select Category</option>
+                    <option value="sc">SC</option>
+                    <option value="st">ST</option>
+                    <option value="obc">OBC</option>
+                    <option value="pwd">PWD</option>
+                
+                </select>
+            </div>
+        
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="">14. Whether EWS</label>
+                <input type="text" class="form-control" name="ews" id="ews" placeholder="Yes/No" required>
+            </div>
+            <div class="col-sm-3 mt-1 mx-3">
+                <label class="">15. Marital Status </label>
+                <select class="form-select" id="marital">
+                    <option selected>Select Status</option>
+                    <option value="1">Single</option>
+                    <option value="2">Married</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="row">
+                <div class="col-sm-3 mt-1 mx-3">
+                    <label class="">16. Aadhaar/Enrollment No <span>*</span></label>
+                    <input type="text" class="form-control" name="aadhaar" id="aadhaar" placeholder="Aadhaar/Enrollment No" required>
+                </div>
+                <div class="col-sm-3 mt-1 mx-3">
+                    <label class="">17. PAN No</label>
+                    <input type="text" class="form-control" name="pan" id="pan" placeholder="PAN No">
+                </div>
+        </div>
+
+        <!-- education qualification table -->
+        <div class="row mt-4" >
+            <label class="education">18. Education Qualification strating from 10th standard <span>*</span></label>
+            <table class="table table-bordered">
+               <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Exam Passed</th>
+                        <th>Board/University </th>
+                        <th> Year of Passing</th>
+                        <th> Subject</th>
+                        <th> Percentage</th>
+                        <th> Remarks</th>
+                        <!-- <th><button class="addbtn" ondblclick="create_tr('table_body')"> + </button></th> -->
+                    </tr>
+                 </thead>
+                 <tbody id="table_body">
+                    <tr class="firstrow" >
+                        <td >1</td>
+                        <td> <input type="text" name="exampassed" placeholder="Exam passed"></td>
+                        <td> <input type="text" name=" board" placeholder="Board/University"></td>
+                        <td> <input type="date" name="yearofpassing" placeholder="Year Of Passing"> </td>
+                        <td> <input type="text" name="subject" placeholder="Subjects"> </td>
+                        <td> <input type="text" name="parcentage" placeholder="Percentage"> </td>
+                        <td> <input type="text" name="remark" placeholder="Remarks"> </td>
+                        <!-- <td><button class="removebtn" onclick="remove_tr(this)"> - </button></td> -->
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td> <input type="text" name="exampassed" placeholder="Exam passed"></td>
+                        <td> <input type="text" name=" board" placeholder="Board/University"></td>
+                        <td> <input type="date" name="yearofpassing" placeholder="Year Of Passing"> </td>
+                        <td> <input type="text" name="subject" placeholder="Subjects"> </td>
+                        <td> <input type="text" name="parcentage" placeholder="Percentage"> </td>
+                        <td> <input type="text" name="remark" placeholder="Remarks"> </td>
+                        <!-- <td><button class="removebtn" onclick="remove_tr(this)"> - </button></td> -->
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td> <input type="text" name="exampassed" placeholder="Exam passed"></td>
+                        <td> <input type="text" name=" board" placeholder="Board/University"></td>
+                        <td> <input type="date" name="yearofpassing" placeholder="Year Of Passing"> </td>
+                        <td> <input type="text" name="subject" placeholder="Subjects"> </td>
+                        <td> <input type="text" name="parcentage" placeholder="Percentage"> </td>
+                        <td> <input type="text" name="remark" placeholder="Remarks"> </td>
+                        <!-- <td><button class="removebtn" onclick="remove_tr(this)"> - </button></td> -->
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td> <input type="text" name="exampassed" placeholder="Exam passed"></td>
+                        <td> <input type="text" name=" board" placeholder="Board/University"></td>
+                        <td> <input type="date" name="yearofpassing" placeholder="Year Of Passing"> </td>
+                        <td> <input type="text" name="subject" placeholder="Subjects"> </td>
+                        <td> <input type="text" name="parcentage" placeholder="Percentage"> </td>
+                        <td> <input type="text" name="remark" placeholder="Remarks"> </td>
+                        <!-- <td><button class="removebtn" onclick="remove_tr(this)"> - </button></td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row">
+            <p>19. Have you taken admission at NIELIT Guwhati or its Extension Centres under any sponsored programmes?</p>
+            <p class="takenothercourse">If yes, please tick the appropiate option <input type="checkbox"> ST/SC Scheme <input type="checkbox"> any other sponsored Scheme. </p>
+        </div>
+        <div class="row">
+            <p class="services">20. Are you currently in service ? Yes <input type="checkbox"> No <input type="checkbox">. If yes no objection certificate from present employer to be attached. </p>
+        </div>
+        <div class="row">
+            <p class="lguardian">21. Name, address & mobile number of Local Guardian if you are from outside of Guwahati <input type="text" placeholder="Name"> ,address & Ph. No <input type="text" name="" placeholder="Name & Ph.no"> </p>
+        </div>
+
+        <div class="btn-section">
+
+            <button class="preview" id="preview">preview</button>
+            <button type="submit" class="submit" id="submit">submit</button>
+            
+            
+        </div>
+
+    </form>
+    </div>
+</div> 
+
+<div class="additionalinfo">
+    <div class="container">
+        <p>Lorem ipsum </p>
+    </div>
+    <div class="containerblank"></div>
+</div>
+
+
+
+<footer>
+    
+</footer>
+</body>
+
+</html>

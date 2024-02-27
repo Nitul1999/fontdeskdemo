@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/allstudent.css">
+    <link rel="stylesheet" href="/css/addstudent.css">
+    <link rel="stylesheet" href="/css/addcourse.css">
+    
+    <title>Dashboard</title>
+</head>
+<body onload="loadhome()">
+<!-- sidebar-section -->
+    <aside class="sidebar">
+        <div class="menu-btn">
+            <img src="/images/colorline.svg" alt="">
+        </div>
+       <div class="sidebar-items">
+            <div class="item">
+               
+                <img src="/images/home.svg" alt="">
+                <a href="#" onclick="loadhome()">
+                    <span>  HOME </span> 
+                </a>
+            </div>
+            <div class="item">
+               
+                    <img src="/images/person-silhouette-plus-svgrepo-com.svg" alt="">
+                <a href="#" onclick="loadaddstudent()">
+                    <span>Student</span>
+                </a>
+            </div>
+            <div class="item">
+                    <img src="/images/books-study-svgrepo-com.svg" alt="">
+                <a href="#" onclick="loadaddcourse()">
+                   <span>Course</span> 
+              </a>
+            </div>
+       </div>
+    </aside>
+
+<!-- navbar-section -->
+    <section>
+
+        <nav>
+            <a>
+                <img src="/images/nielit-logo.jpg" alt="Logo Here">
+            </a>
+            <p>NIELIT Dibrugarh Extension Centre</p>
+        </nav>
+
+        <main >
+
+           <div id="contant" class="contants">
+           </div>  
+
+        </main>
+
+    </section>
+<!-- expand-section -->
+    <div id="menu">
+        <div class="menu-header">
+            <div class="menu-btn">
+                <img src="/images/backcurser.svg">
+            </div>
+            <a href="">
+                <img src="/images/school-svgrepo-com.svg" alt="Logo Here">
+            </a>
+        </div>
+
+        <div class="menu-group">
+            <div class="menu-item">
+                <img src="/images/home.svg" alt="">
+                <a href="#" onclick="loadhome()">
+                    <span> HOME </span>
+                </a>
+            </div>
+        </div>
+
+            <div class="menu-group">
+                <div class="menu-item">
+                    <img src="/images/person-svgrepo-com.svg" alt="">
+                    
+                    <a href="#" onclick="loadallstudent()">
+                        <span>Students</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="/images/books-study-svgrepo-com.svg" alt="">
+                <a href="#" onclick="loadallcourse()">
+                    <span>Courses</span>
+                </a>
+                </div>
+            </div>
+    </div>
+
+
+
+</body>
+<script src="/js/toggle.js"></script>
+<script src="/js/loadpages.js"></script>
+</html>

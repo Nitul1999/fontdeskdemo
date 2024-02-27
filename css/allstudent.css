@@ -1,0 +1,25 @@
+
+
+.head{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h4{
+    text-align: center;
+    padding-left: 50px;
+}
+
+.viewmorebtn{
+    border: 1px solid blue;
+    margin: 10px;
+    font-size: 12px;
+    padding: 6px;
+    text-decoration: none;
+    transition: .5s;
+}
+.viewmorebtn:hover{
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
